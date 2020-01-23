@@ -27,7 +27,7 @@ void loop()
       delay(1000); 
       PORTB=PORTB<<1;
 
-       Serial.println(i);
+       Serial.println(a);
      }
     delay(1000); 
   }
