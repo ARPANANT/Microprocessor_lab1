@@ -31,8 +31,7 @@ void loop()
      }
     delay(1000); 
   }
-  PORTD = 0b00000100;
-  PORTB = 0x00;
+  
 }
 
 //2
@@ -105,9 +104,8 @@ void setup()
 {
   DDRD = 0b11111100;
   DDRB = 0b000011;
-
-   pinMode(buttonPin1, INPUT_PULLUP); 
-   pinMode(buttonPin2, INPUT_PULLUP);
+  pinMode(buttonPin1, INPUT_PULLUP); 
+  pinMode(buttonPin2, INPUT_PULLUP);
  }
 
 void loop()
@@ -129,7 +127,6 @@ void loop()
   {
     delay(val);
     PORTB = PORTB << 1;
-
   } 
  } 
  if (buttonState1 == 0) {         
