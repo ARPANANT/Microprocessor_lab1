@@ -4,7 +4,6 @@ void setup()
 {
   DDRD = 0b11111100;
   DDRB = 0b000011;
-  //PORTD = 0b00000100;
   Serial.begin(9600);
 }
 
@@ -12,7 +11,7 @@ void loop()
 {
   PORTD = 0b00000100;
   PORTB = 0x00;
-  delay(1000); // Wait for 1000 millisecond(s)
+  delay(1000); 
   for(a=0;a<7;a++)
   {
 
@@ -30,7 +29,7 @@ void loop()
 
        Serial.println(i);
      }
-    delay(1000); // Wait for 1000 millisecond(s)
+    delay(1000); 
   }
   PORTD = 0b00000100;
   PORTB = 0x00;
