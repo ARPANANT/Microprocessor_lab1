@@ -26,8 +26,7 @@ void loop()
       PORTB=0b000001;
       delay(1000); 
       PORTB=PORTB<<1;
-
-       Serial.println(a);
+      Serial.println(a);
      }
     delay(1000); 
   }
@@ -45,9 +44,8 @@ void setup()
 {
   DDRD = 0b11111100;
   DDRB = 0b000011;
-
-   pinMode(buttonPin1, INPUT_PULLUP); 
-   pinMode(buttonPin2, INPUT_PULLUP); 
+  pinMode(buttonPin1, INPUT_PULLUP); 
+  pinMode(buttonPin2, INPUT_PULLUP); 
  }
 
 void loop()
@@ -68,7 +66,6 @@ void loop()
   {
     delay(200);
     PORTB = PORTB << 1;
-
   } 
  } 
  if (buttonState1 == 0) 
@@ -78,12 +75,10 @@ void loop()
   {
     delay(300);
     PORTB = PORTB >> 1;
-
   }    
   PORTD = 0b10000000;
   for(a=0;a<6;a++)
   {
-   
     delay(300);
     PORTD = PORTD >> 1;
   }
